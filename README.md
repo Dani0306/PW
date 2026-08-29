@@ -1,29 +1,39 @@
-# Título 1
+# Mi blog de aprendizaje
 
-## Título 2
+Un blog simple, hecho con HTML y CSS, donde voy escribiendo lo que aprendo
+en cada semana del curso.
 
-### Título 3
+Proyecto para la **Unidad 1: Entornos, versionado e IA**.
 
-#### Título 4
+## Cómo verlo
 
-## Negrillas
+No hace falta instalar nada. Hay dos formas:
 
-**Texto en negrita**
+1. Buscar el archivo `index.html` y hacerle doble clic para abrirlo en el navegador.
+2. O, en VS Code, clic derecho sobre `index.html` → "Open with Live Server" (si tenés esa extensión instalada).
 
-**Texto en negrita**
+## Archivos del proyecto
 
-## Texto en cursiva
+```
+mi-blog/
+├── index.html                    → la página del blog
+├── style.css                     → los colores y estilos
+├── docs/
+│   ├── bitacora-prompts.md       → entregable semana 3
+│   └── propuesta-interfaz.md     → entregable semana 4
+├── .gitignore
+└── README.md
+```
 
-_Texto en cursiva_
+## Entregables de la unidad
 
-_Texto en cursiva_
+| Semana | Entregable | Dónde está |
+|---|---|---|
+| 01 | Entorno configurado y página funcionando en local | Todo el proyecto — instrucciones arriba |
+| 02 | Repositorio con `.gitignore`, README e historial ordenado | `.gitignore`, este archivo, y el historial de commits |
+| 03 | Bitácora de prompts | `docs/bitacora-prompts.md` |
+| 04 | Propuesta de interfaz con IA, documentada | `docs/propuesta-interfaz.md` |
 
-## Listas
+## Autor
 
-- Item 1
-- Item 2
-- Item 3
-
-## Listas numeradas
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+_(completar con tu nombre y curso)_

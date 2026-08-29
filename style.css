@@ -1,0 +1,64 @@
+/* Estilos generales de la página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado de arriba de todo */
+header {
+  background-color: #4a7c59;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+}
+
+/* Contenido principal centrado, con un ancho máximo
+   para que no se estire demasiado en pantallas grandes */
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Cada entrada del blog es una "tarjeta" blanca */
+article {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+article h2 {
+  color: #4a7c59;
+  margin-top: 0;
+}
+
+.fecha {
+  color: #888888;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888888;
+  font-size: 14px;
+}
+
+/* Resaltar los nombres de archivos o código dentro del texto */
+code {
+  background-color: #eeeeee;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+}
