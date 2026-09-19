@@ -9,10 +9,16 @@
   </head>
   <body class="w-full flex flex-col">
     <!-- header -->
-    <header class="bg-blue-200 p-4 flex items-center justify-between h-14">
-      <div class="flex space-x-2">
+    <header
+      class="border-b border-black/20 p-6 flex items-center justify-between h-14"
+    >
+      <div class="flex items-center space-x-2">
         <h2>Ruta CC Automotores</h2>
-        <span>LOGO</span>
+        <img
+          class="h-6 w-6"
+          src="https://cdn.jsdelivr.net/npm/lucide-static@0.460.0/icons/car-front.svg"
+          alt="Logo de Ruta CC Automotores"
+        />
       </div>
       <p class="text-xs font-extralight">
         Encontrá tu próximo auto con nosotros.
@@ -21,22 +27,22 @@
 
     <!-- seccion principal con el input -->
 
-    <main class="p-4 w-full flex flex-col space-y-4">
+    <main class="p-6 w-full flex flex-col space-y-4">
       <h2 class="font-bold text-3xl">Catálogo de la semana</h2>
       <div class="flex space-x-2">
         <span
-          class="border px-2 border-blue-800 rounded-xl text-xs font-light py-1 text-blue-800 bg-blue-100"
+          class="border px-2 border-blue-800 rounded-xl text-[10px] font-light py-0.5 text-blue-800 bg-blue-100"
         >
           Más de 100 vehículos
         </span>
 
         <span
-          class="border px-2 border-blue-800 rounded-xl text-xs font-light py-1 text-blue-800 bg-blue-100"
+          class="border px-2 border-blue-800 rounded-xl text-[10px] font-light py-0.5 text-blue-800 bg-blue-100"
         >
           Más de 20 vendidos el último mes
         </span>
       </div>
-      <p class="text-gray-500 text-sm font-light">
+      <p class="text-gray-500 text-xs font-light">
         Vehículos nuevos y usados seleccionados, revisados y listos para rodar,
         con financiación a tu medida y la atención cercana que merecés.
       </p>
@@ -44,7 +50,7 @@
       <input
         placeholder="Buscá tu vehículo ideal..."
         type="text"
-        class="w-full px-4 border border-black/20 py-2 text-sm font-light text-gray-600 outline-none bg-white rounded-md"
+        class="w-full px-4 border border-black/20 py-1.5 text-sm font-light text-gray-600 outline-none bg-white rounded-xl"
       />
 
       <!-- categorias -->
@@ -83,8 +89,220 @@
       </div>
 
       <!-- imagenes del catalogo -->
+      <div class="flex flex-wrap gap-3 mt-4">
+        <!-- cards -->
+        <div class="flex rounded-xl flex-col w-55 h-70 border border-black/20">
+          <img
+            class="object-cover w-full h-[40%] rounded-t-xl"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Lamborghini_Aventador%2C_Motortreff_Bella_Italia_2024%2C_Munich_%28P1190389-RR%29.jpg/960px-Lamborghini_Aventador%2C_Motortreff_Bella_Italia_2024%2C_Munich_%28P1190389-RR%29.jpg"
+            alt="Lamborghini Aventador"
+          />
+          <div class="flex flex-col space-y-2 p-3">
+            <strong class="text-sm font-semibold text-black"
+              >Lamborghini Aventador</strong
+            >
+            <div class="flex flex-wrap gap-1">
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >Deportivo</span
+              >
+            </div>
 
-      <div class="flex flex-col space-y-3"></div>
+            <div class="flex space-x-1 items-end">
+              <strong class="text-base font-bold text-blue-900">
+                $300.000
+              </strong>
+              <span class="text-gray-400 text-[10px]">/ USD</span>
+            </div>
+
+            <span class="text-gray-400 text-[10px]"> Italia, Roma. </span>
+          </div>
+        </div>
+
+        <div class="flex rounded-xl flex-col w-55 h-70 border border-black/20">
+          <img
+            class="object-cover w-full h-[40%] rounded-t-xl"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/2020_Toyota_Corolla_LE_standard_front%2C_5.25.19.jpg/960px-2020_Toyota_Corolla_LE_standard_front%2C_5.25.19.jpg"
+            alt="Toyota Corolla 2020"
+          />
+          <div class="flex flex-col space-y-2 p-3">
+            <strong class="text-sm font-semibold text-black"
+              >Toyota Corolla 2020</strong
+            >
+            <div class="flex flex-wrap gap-1">
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >Sedán</span
+              >
+            </div>
+
+            <div class="flex space-x-1 items-end">
+              <strong class="text-base font-bold text-blue-900">
+                $18.500
+              </strong>
+              <span class="text-gray-400 text-[10px]">/ USD</span>
+            </div>
+
+            <span class="text-gray-400 text-[10px]"> Argentina, Córdoba. </span>
+          </div>
+        </div>
+
+        <div class="flex rounded-xl flex-col w-55 h-70 border border-black/20">
+          <img
+            class="object-cover w-full h-[40%] rounded-t-xl"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/2020_Toyota_Corolla_Cross_-_Front.jpg/960px-2020_Toyota_Corolla_Cross_-_Front.jpg"
+            alt="Toyota Corolla Cross 2022"
+          />
+          <div class="flex flex-col space-y-2 p-3">
+            <strong class="text-sm font-semibold text-black"
+              >Toyota Corolla Cross 2022</strong
+            >
+            <div class="flex flex-wrap gap-1">
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >SUV</span
+              >
+            </div>
+
+            <div class="flex space-x-1 items-end">
+              <strong class="text-base font-bold text-blue-900">
+                $27.900
+              </strong>
+              <span class="text-gray-400 text-[10px]">/ USD</span>
+            </div>
+
+            <span class="text-gray-400 text-[10px]">
+              Argentina, Buenos Aires.
+            </span>
+          </div>
+        </div>
+
+        <div class="flex rounded-xl flex-col w-55 h-70 border border-black/20">
+          <img
+            class="object-cover w-full h-[40%] rounded-t-xl"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ford_Ranger_Raptor_IAA_2019_JM_0492.jpg/960px-Ford_Ranger_Raptor_IAA_2019_JM_0492.jpg"
+            alt="Ford Ranger Raptor 2019"
+          />
+          <div class="flex flex-col space-y-2 p-3">
+            <strong class="text-sm font-semibold text-black"
+              >Ford Ranger Raptor 2019</strong
+            >
+            <div class="flex flex-wrap gap-1">
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >Camioneta</span
+              >
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >4x4</span
+              >
+            </div>
+
+            <div class="flex space-x-1 items-end">
+              <strong class="text-base font-bold text-blue-900">
+                $42.000
+              </strong>
+              <span class="text-gray-400 text-[10px]">/ USD</span>
+            </div>
+
+            <span class="text-gray-400 text-[10px]"> Argentina, Mendoza. </span>
+          </div>
+        </div>
+
+        <div class="flex rounded-xl flex-col w-55 h-70 border border-black/20">
+          <img
+            class="object-cover w-full h-[40%] rounded-t-xl"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Volkswagen_Golf_VIII_R_333_Limited_Edition_IMG_9486.jpg/960px-Volkswagen_Golf_VIII_R_333_Limited_Edition_IMG_9486.jpg"
+            alt="Volkswagen Golf R"
+          />
+          <div class="flex flex-col space-y-2 p-3">
+            <strong class="text-sm font-semibold text-black"
+              >Volkswagen Golf R</strong
+            >
+            <div class="flex flex-wrap gap-1">
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >Hatchback</span
+              >
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >Deportivo</span
+              >
+            </div>
+
+            <div class="flex space-x-1 items-end">
+              <strong class="text-base font-bold text-blue-900">
+                $35.500
+              </strong>
+              <span class="text-gray-400 text-[10px]">/ USD</span>
+            </div>
+
+            <span class="text-gray-400 text-[10px]"> Argentina, Rosario. </span>
+          </div>
+        </div>
+
+        <div class="flex rounded-xl flex-col w-55 h-70 border border-black/20">
+          <img
+            class="object-cover w-full h-[40%] rounded-t-xl"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/2021_Jeep_Compass_Limited_4WD_in_Billet_Silver_Metallic%2C_front_left.jpg/960px-2021_Jeep_Compass_Limited_4WD_in_Billet_Silver_Metallic%2C_front_left.jpg"
+            alt="Jeep Compass Limited 2021"
+          />
+          <div class="flex flex-col space-y-2 p-3">
+            <strong class="text-sm font-semibold text-black"
+              >Jeep Compass Limited 2021</strong
+            >
+            <div class="flex flex-wrap gap-1">
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >SUV</span
+              >
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >4x4</span
+              >
+            </div>
+
+            <div class="flex space-x-1 items-end">
+              <strong class="text-base font-bold text-blue-900">
+                $29.800
+              </strong>
+              <span class="text-gray-400 text-[10px]">/ USD</span>
+            </div>
+
+            <span class="text-gray-400 text-[10px]">
+              Uruguay, Montevideo.
+            </span>
+          </div>
+        </div>
+
+        <div class="flex rounded-xl flex-col w-55 h-70 border border-black/20">
+          <img
+            class="object-cover w-full h-[40%] rounded-t-xl"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Porsche_992_Carrera_S_coupe_IMG_5838.jpg/960px-Porsche_992_Carrera_S_coupe_IMG_5838.jpg"
+            alt="Porsche 911 Carrera S"
+          />
+          <div class="flex flex-col space-y-2 p-3">
+            <strong class="text-sm font-semibold text-black"
+              >Porsche 911 Carrera S</strong
+            >
+            <div class="flex flex-wrap gap-1">
+              <span
+                class="px-2 w-max py-0.5 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[9px] rounded-xl cursor-pointer"
+                >Deportivo</span
+              >
+            </div>
+
+            <div class="flex space-x-1 items-end">
+              <strong class="text-base font-bold text-blue-900">
+                $135.000
+              </strong>
+              <span class="text-gray-400 text-[10px]">/ USD</span>
+            </div>
+
+            <span class="text-gray-400 text-[10px]"> Chile, Santiago. </span>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
