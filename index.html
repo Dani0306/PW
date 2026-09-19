@@ -1,68 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi blog de aprendizaje</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header>
-    <h1>Mi blog de aprendizaje</h1>
-    <p>Acá voy anotando lo que aprendo semana a semana en el curso.</p>
-  </header>
-
-  <main>
-
-    <article>
-      <h2>Semana 1: Instalando mis herramientas</h2>
-      <p class="fecha">3 de agosto de 2026</p>
-      <p>
-        Esta semana instalé VS Code y Visual Studio 2026 Community para comparar los dos.
-        Al principio no sabía bien la diferencia, pero ahora entiendo que VS Code es más
-        liviano y Visual Studio trae más cosas ya integradas. Elegí VS Code para este
-        proyecto porque es más simple para empezar.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruta CC Automotores</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="w-full flex flex-col">
+    <header class="flex items-center justify-between h-14">
+      <div class="flex space-x-2">
+        <h2>Ruta CC Automotores</h2>
+        <span>LOGO</span>
+      </div>
+      <p class="text-xs font-extralight">
+        Encontrá tu próximo auto con nosotros.
       </p>
-      <p>
-        Lo más importante que aprendí: no hace falta instalar mil extensiones el primer
-        día. Con el editor y poco más ya podía ver mi página funcionando en el navegador.
-      </p>
-    </article>
-
-    <article>
-      <h2>Semana 2: Git y GitHub</h2>
-      <p class="fecha">10 de agosto de 2026</p>
-      <p>
-        Aprendí a usar Git para guardar los cambios de mi proyecto paso a paso, y a subirlo
-        a GitHub. Al principio me costó entender qué era un "commit", pero ahora lo pienso
-        como una foto del proyecto en un momento dado, con una nota explicando qué cambié.
-      </p>
-      <p>
-        También aprendí para qué sirve el archivo <code>.gitignore</code>: para decirle a
-        Git qué archivos NO tiene que guardar (como archivos temporales del editor).
-      </p>
-    </article>
-
-    <article>
-      <h2>Semanas 3 y 4: Programando con ayuda de IA</h2>
-      <p class="fecha">24 de agosto de 2026</p>
-      <p>
-        Usé una IA para ayudarme a armar esta página y a pensar los colores. No todo lo
-        que me propuso lo usé tal cual: algunas cosas las acepté, otras las cambié porque
-        eran más complicadas de lo que necesitaba, y algunas directamente no las usé.
-      </p>
-      <p>
-        Anoté todo eso en un archivo aparte para no olvidarme qué le pedí y qué hice con
-        cada respuesta. Se puede ver en <code>docs/bitacora-prompts.md</code>.
-      </p>
-    </article>
-
-  </main>
-
-  <footer>
-    <p>Proyecto para la Unidad 1: Entornos, versionado e IA.</p>
-  </footer>
-
-</body>
+    </header>
+    <main class="w-full flex flex-col">
+      <h2>Catalogo de la semana</h2>
+    </main>
+  </body>
 </html>
