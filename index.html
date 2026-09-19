@@ -8,7 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="w-full flex flex-col">
-    <header class="flex items-center justify-between h-14">
+    <!-- header -->
+    <header class="bg-blue-200 p-4 flex items-center justify-between h-14">
       <div class="flex space-x-2">
         <h2>Ruta CC Automotores</h2>
         <span>LOGO</span>
@@ -17,8 +18,73 @@
         Encontrá tu próximo auto con nosotros.
       </p>
     </header>
-    <main class="w-full flex flex-col">
-      <h2>Catalogo de la semana</h2>
+
+    <!-- seccion principal con el input -->
+
+    <main class="p-4 w-full flex flex-col space-y-4">
+      <h2 class="font-bold text-3xl">Catálogo de la semana</h2>
+      <div class="flex space-x-2">
+        <span
+          class="border px-2 border-blue-800 rounded-xl text-xs font-light py-1 text-blue-800 bg-blue-100"
+        >
+          Más de 100 vehículos
+        </span>
+
+        <span
+          class="border px-2 border-blue-800 rounded-xl text-xs font-light py-1 text-blue-800 bg-blue-100"
+        >
+          Más de 20 vendidos el último mes
+        </span>
+      </div>
+      <p class="text-gray-500 text-sm font-light">
+        Vehículos nuevos y usados seleccionados, revisados y listos para rodar,
+        con financiación a tu medida y la atención cercana que merecés.
+      </p>
+
+      <input
+        placeholder="Buscá tu vehículo ideal..."
+        type="text"
+        class="w-full px-4 border border-black/20 py-2 text-sm font-light text-gray-600 outline-none bg-white rounded-md"
+      />
+
+      <!-- categorias -->
+
+      <div class="flex gap-2 flex-wrap">
+        <span
+          class="px-3 py-1 bg-blue-700 text-white font-medium text-[10px] rounded-xl cursor-pointer"
+        >
+          Todos
+        </span>
+        <span
+          class="px-3 py-1 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[10px] rounded-xl cursor-pointer"
+        >
+          Sedán
+        </span>
+        <span
+          class="px-3 py-1 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[10px] rounded-xl cursor-pointer"
+        >
+          SUV
+        </span>
+        <span
+          class="px-3 py-1 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[10px] rounded-xl cursor-pointer"
+        >
+          Camionetas
+        </span>
+        <span
+          class="px-3 py-1 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[10px] rounded-xl cursor-pointer"
+        >
+          Hatchback
+        </span>
+        <span
+          class="px-3 py-1 bg-blue-100 border-blue-600 border text-blue-800 font-medium text-[10px] rounded-xl cursor-pointer"
+        >
+          Deportivos
+        </span>
+      </div>
+
+      <!-- imagenes del catalogo -->
+
+      <div class="flex flex-col space-y-3"></div>
     </main>
   </body>
 </html>
